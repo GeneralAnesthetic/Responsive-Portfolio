@@ -1,0 +1,209 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <title>Document</title> -->
+
+        <style>
+            @media(max-width: 600px) {
+                #Name {
+                    font-style: bold;
+                }
+                .container-fluid {
+                    width: 100%;
+                    display: inline-flex;
+                }
+                img {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+
+            @media(min-width: 1400px) {
+                #Name {
+                    font-style: bold;
+                    font-size: 2.75em;
+                }
+                .container-fluid {
+                    width: 100%;
+                    display: inline-flex;
+                    shape-margin: 0px;
+                    border: 5px black;
+                }
+                img {
+                    width: 1.25em;
+                    height: 1.25em;
+                }
+                body {
+                    background-color: lightslategray;
+                }
+            }
+
+            @media(min-width: 980px) {
+                .container-fluid {
+                    width: 100%;
+                    /* display: inline-flex; */
+                    shape-margin: 0px;
+                    /* border: 5px black; */
+                }
+            }
+
+            img {
+                width: 1.25em;
+                height: 1.25em;
+            }
+
+            body {
+                background-color: lightslategray;
+            }
+
+            footer {
+                margin-bottom: 0px;
+                margin-left: 0px;
+                position: absolute;
+            }
+
+            body {
+                background-color: lightgrey;
+
+            }
+
+            .container-fluid {
+
+
+                background-color: azure;
+
+                border: 1px blue;
+                color: black;
+            }
+
+            #Name {
+                font-size: 2.5em;
+                text-decoration: none;
+                background-color: lightcyan;
+
+            }
+
+            #navbarText {
+
+                color: black;
+            }
+
+            input[type=text],
+            select,
+            textarea {
+                width: 960px;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+                width: 100%;
+                /* margin-left: 850px; */
+                margin-top: 50px;
+            }
+
+            .col-25 {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+                margin-left: 20px;
+            }
+
+            .col-75 {
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+                margin-left: 20px;
+            }
+        </style>
+
+        <body>
+            <nav "navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="row justify-content-between">
+                        <div class="col ml-auto">
+                            <span class="navbar-brand mb-0 h1" id="Name">Robert Schear</span>
+                        </div>
+                        <div class="col-md-2 mr-auto">
+                            <ul class="nav navbar-nav" id="navbarText">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="Index.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+        </body>
+
+    </html>
